@@ -9,10 +9,10 @@ public class Test {
                 new ClassPathXmlApplicationContext("bean.xml");
         System.out.println("Spring容器加载完成");
 
-        UserDao dao = (UserDao) context.getBean("userDao");
-        System.out.println("获取到的对象: " + dao);
+        // UserDao dao = (UserDao) context.getBean("userDao");
+        // System.out.println("获取到的对象: " + dao);
 
-        dao.save();
+        // dao.save();
 
         Boy dao1 = (Boy) context.getBean("boy");
         System.out.println(dao1);

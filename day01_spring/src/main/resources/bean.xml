@@ -1,15 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userDao" class="yx.user.UserDaoJdbcImpl"/>
-
-    <bean id="userDao1" class="yx.user.UserDaoMybatisImpl"/>
-
-    <bean id="boy" class="yx.user.Boy">
-        <property name="name" value="张三"/>
-        <property name="gender" value="男"/>
+    <!-- 配置Girl对象1 -->
+    <bean id="girl" class="yx.user.Girl">
+        <property name="name" value="李某"/>
+        <property name="height" value="160"/>
+        <property name="weight" value="100"/>
     </bean>
+
+    <!-- 配置Girl对象2（可选） -->
+    <bean id="girl1" class="yx.user.Girl">
+        <property name="name" value="张某"/>
+        <property name="height" value="165"/>
+        <property name="weight" value="110"/>
+    </bean>
+
+    <!-- 配置Boy对象，注入 girl -->
+    <bean id="boy" class="yx.user.Boy">
+        <property name="name" value="小明"/>
+        <property name="age" value="22"/>
+        <!-- 核心：引用注入（ref） -->
+        <property name="girl" ref="girl"/>
+        <!-- 如果你想用 girl1，把 ref的值改成 girl1 即可 -->
+    </bean>
+
 </beans>

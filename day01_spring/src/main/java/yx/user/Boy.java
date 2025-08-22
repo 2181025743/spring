@@ -2,27 +2,31 @@ package yx.user;
 
 public class Boy {
     private String name;
-    private String gender;
+    private int age;
+    private Girl girl;
 
-    // getter和setter方法
-    public String getName() {
-        return name;
+    public Boy() {
+        System.out.println("Boy构造方法被调用");
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getGender() {
-        return gender;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setGirl(Girl girl) {
+        this.girl = girl;
+    }
+
+    public void findGf() {
+        System.out.println(name + " 找到女朋友: " + girl.getName());
     }
 
     @Override
     public String toString() {
-        return "Boy{name='" + name + "', gender='" + gender + "'}";
+        return "Boy{name='" + name + "', age=" + age + ", girl=" + girl + "}";
     }
 }
