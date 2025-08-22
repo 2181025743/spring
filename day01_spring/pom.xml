@@ -1,18 +1,17 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>yx</groupId>
+        <artifactId>spring8_22</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>yx</groupId>
-    <artifactId>spring8_22</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <artifactId>day01_spring</artifactId>
+    <packaging>jar</packaging>
 
-    <name>spring8_22</name>
+    <name>day01_spring</name>
     <url>http://maven.apache.org</url>
-    <modules>
-        <module>day01</module>
-        <module>day01_spring</module>
-    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,9 +25,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>2.1.4</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.15</version>
         </dependency>
     </dependencies>
 </project>
