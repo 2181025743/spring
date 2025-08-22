@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans>
+    <!--    <bean id="userDao" class="yx.user.UserDaoJDBCImpl"/>-->
+    <!--    <bean id="userDao" class="yx.user.UserDaoMybatisImpl"/>-->
+    <bean id="userDao" class="yx.user.Boy">
+        <property name="name" value="张三"/>
+        <property name="gender" value="男"/>
+    </bean>
+
+</beans>
