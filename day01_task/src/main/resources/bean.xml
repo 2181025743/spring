@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 学生对象 -->
+    <bean id="student1" class="com.yx.question.Student">
+        <property name="name" value="小明"/>
+        <property name="age" value="20"/>
+    </bean>
+
+    <!-- Dao 实现类1 -->
+    <bean id="studentDaoMybatis" class="com.yx.question.StudentDaoMybatisImpl"/>
+
+    <!-- Dao 实现类2 -->
+    <bean id="studentDaoJdbc" class="com.yx.question.StudentDaoJdbcImpl"/>
+
+    <!-- Service 类，注入 Dao -->
+    <bean id="studentService" class="com.yx.question.StudentService">
+        <!-- 使用 Mybatis 的实现 -->
+        <property name="studentDao" ref="studentDaoMybatis"/>
+    </bean>
+</beans>

@@ -1,4 +1,4 @@
-package com.example.ioc;
+package com.yx.ioc;
 
 public class Teacher {
     private String name;
