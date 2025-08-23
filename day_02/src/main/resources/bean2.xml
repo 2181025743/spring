@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="teacherBean" class="yx.injection.Teacher">
+        <property name="name" value="王老师"/>
+        <property name="age" value="45"/>
+    </bean>
+    <bean id="student" class="yx.injection.Student">
+        <constructor-arg value="张三"/>
+        <constructor-arg value="20"/>
+        <constructor-arg ref="teacherBean"/>
+    </bean>
+</beans>

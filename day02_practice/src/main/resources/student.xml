@@ -1,0 +1,33 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="stu1" class="yx.model.Student">
+        <property name="name" value="张三"/>
+        <property name="gender" value="男"/>
+    </bean>
+    <bean id="stu2" class="yx.model.Student">
+        <property name="name" value="李四"/>
+        <property name="gender" value="男"/>
+    </bean>
+    <bean id="stu3" class="yx.model.Student">
+        <property name="name" value="王五"/>
+        <property name="gender" value="女"/>
+    </bean>
+    <bean id="stu4" class="yx.model.Student">
+        <property name="name" value="赵六"/>
+        <property name="gender" value="男"/>
+    </bean>
+
+    <bean id="poolManager" class="yx.model.PoolManager">
+        <property name="students">
+            <list>
+                <ref bean="stu1"/>
+                <ref bean="stu2"/>
+                <ref bean="stu3"/>
+                <ref bean="stu4"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>

@@ -7,10 +7,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>day01_task</artifactId>
+    <artifactId>day02_practice</artifactId>
     <packaging>jar</packaging>
 
-    <name>day01_task</name>
+    <name>day02_practice</name>
     <url>http://maven.apache.org</url>
 
     <properties>

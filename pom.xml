@@ -13,7 +13,8 @@
         <module>day01</module>
         <module>day01_spring</module>
         <module>day_02</module>
-        <module>day01_task</module>
+        <module>day01_practice</module>
+        <module>day02_practice</module>
     </modules>
 
     <properties>
