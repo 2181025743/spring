@@ -2,8 +2,75 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="teacherService" class="yx.injection.TeacherService">
+    <bean id="teacherDao" class="yx.injection.TeacherDaoImpl"/>
+
+    <bean id="teacherA" class="yx.injection.Teacher">
         <property name="name" value="张老师"/>
         <property name="age" value="35"/>
     </bean>
+
+    <bean id="teacherB" class="yx.injection.Teacher">
+        <property name="name" value="李老师"/>
+        <property name="age" value="30"/>
+    </bean>
+
+    <bean id="teacherC" class="yx.injection.Teacher">
+        <property name="name" value="王老师"/>
+        <property name="age" value="40"/>
+    </bean>
+    <bean id="teacherService" class="yx.injection.TeacherService">
+        <property name="dao" ref="teacherDao"/>
+        <property name="name" value="张老师"/>
+        <property name="age" value="35"/>
+        <property name="addrs">
+            <list>
+                <value>南京</value>
+                <value>北京</value>
+                <value>天津</value>
+                <value>上海</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>AA</value>
+                <value>BB</value>
+                <value>CC</value>
+            </set>
+        </property>
+        <property name="teachers">
+            <set>
+                <bean class="yx.injection.Teacher">
+                    <property name="name" value="t1"/>
+                    <property name="age" value="20"/>
+                </bean>
+                <bean class="yx.injection.Teacher">
+                    <property name="name" value="t2"/>
+                    <property name="age" value="20"/>
+                </bean>
+                <ref bean="teacherA"/>
+                <ref bean="teacherB"/>
+                <ref bean="teacherC"/>
+            </set>
+        </property>
+        <property name="list">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="语文" value="80.5"/>
+                <entry key="数学" value="85.0"/>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="aaa">value1</prop>
+                <prop key="bbb">value2</prop>
+            </props>
+        </property>
+    </bean>
+
 </beans>

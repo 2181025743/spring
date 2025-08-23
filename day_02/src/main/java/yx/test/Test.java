@@ -9,7 +9,7 @@ public class Test {
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
         // System.out.println(context.getBean("teacherService"));
         TeacherService service =
-                context.getBean(TeacherService.class);
+                (TeacherService) context.getBean("teacherService");
         System.out.println(service);
     }
 }
