@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 借书证 -->
+    <bean id="permit1" class="yx.model.BookPermit">
+        <property name="color" value="红色"/>
+        <property name="level" value="A"/>
+    </bean>
+    <bean id="permit2" class="yx.model.BookPermit">
+        <property name="color" value="蓝色"/>
+        <property name="level" value="A"/>
+    </bean>
+    <bean id="permit3" class="yx.model.BookPermit">
+        <property name="color" value="红色"/>
+        <property name="level" value="B"/>
+    </bean>
+    <bean id="permit4" class="yx.model.BookPermit">
+        <property name="color" value="蓝色"/>
+        <property name="level" value="B"/>
+    </bean>
+
+    <!-- 学生+借书证 -->
+    <bean id="reader1" class="yx.model.LibraryManger">
+        <property name="name" value="张三"/>
+        <property name="permit" ref="permit1"/>
+    </bean>
+    <bean id="reader2" class="yx.model.LibraryManger">
+        <property name="name" value="李四"/>
+        <property name="permit" ref="permit2"/>
+    </bean>
+    <bean id="reader3" class="yx.model.LibraryManger">
+        <property name="name" value="王五"/>
+        <property name="permit" ref="permit3"/>
+    </bean>
+    <bean id="reader4" class="yx.model.LibraryManger">
+        <property name="name" value="赵六"/>
+        <property name="permit" ref="permit4"/>
+    </bean>
+</beans>

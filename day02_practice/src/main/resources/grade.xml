@@ -1,0 +1,16 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="gradeManager" class="yx.model.GradeManager">
+        <property name="name" value="张三"/>
+        <property name="grades">
+            <map>
+                <entry key="语文" value="80"/>
+                <entry key="英语" value="60"/>
+                <entry key="数学" value="55"/>
+                <entry key="地理" value="50"/>
+            </map>
+        </property>
+    </bean>
+</beans>
