@@ -13,7 +13,7 @@ public class Student {
     private int age;
 
     //@Qualifier("teacher") byName注入
-    //@Resource//(name ="teacher" )
+    // @Resource//(name ="teacher" )
     private Teacher teacher;
 
     @Autowired
