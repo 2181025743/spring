@@ -12,13 +12,14 @@
     <modules>
         <module>day01</module>
         <module>day01_spring</module>
-        <module>day_02</module>
+        <module>day02</module>
         <module>day01_practice</module>
         <module>day02_practice</module>
         <module>day03</module>
         <module>day03_practice</module>
         <module>day04_practice_1</module>
         <module>day04_practice</module>
+        <module>day05</module>
     </modules>
 
     <properties>

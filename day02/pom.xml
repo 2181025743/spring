@@ -7,7 +7,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>day_02</artifactId>
+    <artifactId>day02</artifactId>
     <packaging>jar</packaging>
 
     <name>day_02</name>
