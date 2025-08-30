@@ -22,6 +22,7 @@
         <module>day05</module>
         <module>day05_work</module>
         <module>day04</module>
+        <module>day05_work2</module>
     </modules>
 
     <properties>
