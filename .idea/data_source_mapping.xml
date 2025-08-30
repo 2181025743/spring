@@ -3,5 +3,6 @@
   <component name="DataSourcePerFileMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a43fc45-286f-45c3-9c53-2e517dbe35ac/console.sql" value="4a43fc45-286f-45c3-9c53-2e517dbe35ac" />
     <file url="file://$PROJECT_DIR$/day03_practice/src/main/java/yx/dao/DaoImpl.java" value="4a43fc45-286f-45c3-9c53-2e517dbe35ac" />
+    <file url="file://$PROJECT_DIR$/day06/src/main/resources/yx/mapper/StudentMapper.xml" value="4a43fc45-286f-45c3-9c53-2e517dbe35ac" />
   </component>
 </project>

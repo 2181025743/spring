@@ -23,6 +23,7 @@
         <module>day05_work</module>
         <module>day04</module>
         <module>day05_work2</module>
+        <module>day06</module>
     </modules>
 
     <properties>
@@ -34,7 +35,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.3.24</version>
+            <version>6.2.7</version>
         </dependency>
 
         <!-- Spring JDBC -->
