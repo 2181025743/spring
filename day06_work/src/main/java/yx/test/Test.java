@@ -12,8 +12,14 @@ public class Test {
                 .setAccount("player003")
                 .setPassword("pwd123")
                 .setCoupon(0);
-        service.register(newAccount);
+        // service.register(newAccount);
         System.out.println("注册成功！");
-        context.close();
+        System.out.println("====================");
+        service.selectList().forEach(System.out::println);
+        System.out.println("====================");
+        GameAccount login = service.login("player003", "pwd123");
+        System.out.println(login);
+        System.out.println("====================");
+        System.out.println(service.updateCoupon("player003", 500));
     }
 }
