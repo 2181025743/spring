@@ -12,4 +12,7 @@ public interface GameAccountService {
     GameAccount login(String account, String password);
 
     int updateCoupon(String account, int num);
+
+    // 新增消费点券方法
+    boolean consumeCoupon(String account, int amount, String reason);
 }
