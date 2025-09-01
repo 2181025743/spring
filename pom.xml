@@ -27,6 +27,7 @@
         <module>day06_2</module>
         <module>day06_work</module>
         <module>day07</module>
+        <module>day08</module>
     </modules>
 
     <properties>
